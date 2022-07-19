@@ -1,5 +1,5 @@
 import FullPage from './components/fullPage';
-import background from "./images/sky2.jpg";
+import background from "./images/sky.jpg";
 import Nav from './components/nav';
 import { saveAs } from "file-saver";
 

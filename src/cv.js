@@ -1,7 +1,7 @@
 import FullPage from './components/fullPage';
 import Skill from "./components/skill.js"
 import Info from "./components/info.js"
-import background from "./images/presentation2.jpg";
+import background from "./images/presentation.jpg";
 import Nav from './components/nav';
 import logoReact from "./images/react.png";
 import logoMysql from "./images/mysql.png";
@@ -15,12 +15,14 @@ import Git from "./images/git.png";
 
 
 function Cv() {
+
+	/**function calcul age */
 	function CalculAge(dtn) {  
 		var today = new Date(); 
-// on lit la date de naissance
-		var an=dtn.substr(6,4); // l'année (les quatre premiers caractères de la chaîne à partir de 6)
-		var mois=dtn.substr(3,2);// On selectionne le mois de la date de naissance
-		var day= dtn.substr(0,2); // On selectionne la jour de la date de naissance
+		
+		var an=dtn.substr(6,4); 
+		var mois=dtn.substr(3,2);
+		var day= dtn.substr(0,2); 
 	
 		var dateNaissance = new Date(an + "-" + mois + "-" + day);
 	

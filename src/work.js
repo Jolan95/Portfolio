@@ -17,9 +17,9 @@ function Work() {
  	let langageGames = [logoPhp, logoJs, logoLess];
  	let langageSport = [logoSymfony, logoJs]
  	let langageWer = [logoSymfony, logoJs, logoLess]
- 	let buttonsGames = [{link : "https://github.com/Jolan95/Games-Projet", styleName : "git", label : ""},{link : "https://games-online.herokuapp.com/", styleName : "web", label : "Website"}];
+ 	let buttonsGames = [{link : "https://github.com/Jolan95/Games-Projet", styleName : "git", label : ""},{link : "https://games-online.herokuapp.com/", styleName : "web", label : ""}];
  	let buttonsSport = [{link : "https://github.com/Jolan95/LeQuotidienSport", styleName : "git", label : ""}]
- 	let buttonsWer = [{link : "https://www.werservice.fr/", styleName : "web", label : "Website"}]
+ 	let buttonsWer = [{link : "https://www.werservice.fr/", styleName : "web", label : ""}]
   	return (
 		<div>
     	    <Nav location="work"></Nav> 
