@@ -1,0 +1,44 @@
+{
+    "lastname" : "Aubry",
+    "firstname" : "Jolan",
+    "birthDate" : "08/02/1996",
+    "city" : "Bordeaux",
+    "country" : "France",
+
+    "email" : "jolan.aubry@hotmail.fr",
+    "experiences" : [
+        {
+            "dates": "Juin 2017 - Septembre 2020",
+            "function": "Constructeur de décors (intermittent du spéctacle)",
+            "location": "Atelier Devineau"
+        },
+        {
+            "dates": "Septembre 2015 - Avril 2017",
+            "function": "Equipier polyvalent",
+            "location": "McDonald's (L'Isle-Adam)"
+        },
+        {
+            "dates": "Mars - Mai 2022",
+            "function": "Stagiaire intégrateur web",
+            "location": "Web Design Marchand (Bordeaux)"
+        }
+    ],
+    "formations" : [
+        {
+        "label" : "Graduate developpeur web FullStack",
+         "school" : "STUDI",
+         "date" : "Depuis octobre 2020",
+         "graduate" : false
+        },
+        {
+        "label" : "Baccalauréat Economique et Social",
+        "school" : "Lycée Gerard de Nerval (Luzarches)",
+        "date" : "2014",
+        "graduate" : true
+        }
+    ], 
+    "skills" : ["HTML", "CSS", "Javascript", "React JS", "MySQL", "PHP", "Git"]
+}
+
+
+

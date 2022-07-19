@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+/****Style-general****/
+*{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size : 2rem;
+  font-family: 'EB Garamond', serif;
+}
+.img100{
+  height : 100%;
+  max-width : 30px;
+  width :auto
+}
+img {
+  width : 100%
+}
+
+/***Navbar****/
+.navbar{
+  position: absolute;
+  top : 0px;
+  left : 10px;
+  color : black;
+  font-weight : 600;
+  font-size : 1.3rem;
+}
+.active{
+  text-decoration: underline solid white 3px;
+  text-underline-offset: 3px;
+  color : white!important
+}
+
+.link:link {
+  text-decoration: none;
+}
+/***Fullpage***/
+.full-page {
+  margin : 0;
+  min-height : 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top : 55px;
+}
+.full-center{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/***Home***/
+.portrait{
+  display : flex;
+  justify-content: center;
+}
+.zone-img {
+  object-fit: cover;
+  height : 200px;
+  width : 200px;
+  border-radius : 180px;
+  background-image :linear-gradient(rgba(139, 207, 231, 0.164), rgba(86, 219, 236, 0.233)), url('../images/portrait.jpg');
+  background-size: cover;
+  background-position: 7px -35px;
+}  
+.name{
+  font-size: 2.5rem;
+}  
+.btn-light{
+  animation : appear-transition 6s 
+}  
+
+/*Animation-Home*/
+.typewriter{
+  overflow: hidden; 
+  white-space: nowrap; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 2.5s .7s steps(30, end),
+    appear .7s;
+  font-size : 1.2rem; 
+}
+.typewriter-city{
+  overflow: hidden; 
+  white-space: nowrap; 
+  letter-spacing: .15em; 
+  animation: 
+    appear-transition 4s;
+  font-size : 1.6rem; 
+  font-weight: 300;
+}
+
+
+
+
+/***Work***/
+.details{
+  justify-self: auto;
+  font-size : 2rem;
+  overflow-wrap:break-word;
+}  
+
+
+/***Projet***/
+.wrapper-project{
+  color:hsla(0,0%,100%,.8);
+  position:relative;
+  -webkit-perspective:600px;
+  perspective:600px;
+  height:360px;
+  width:75%;
+  max-width:350px;
+}  
+.wrapper-project:nth-child(1){
+  animation: appear-project 1.2s;
+}
+.wrapper-project:nth-child(2){
+  animation: appear-project 2.4s;
+}
+.wrapper-project:nth-child(3){
+  animation: appear-project 3.6s;
+}
+.project h2{ 
+  font-size : 1.8rem;
+}
+.project{
+  background-color: rgba(165, 158, 158, 1);
+  border-radius : 12px;
+  height : 350px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width : 700px;
+  outline:1px solid transparent;
+  overflow:hidden;
+  transform-style: preserve-3d;
+  backface-visibility:hidden;
+  -webkit-transform-style:preserve-3d;
+  -webkit-backface-visibility:hidden;
+}
+.details {
+  font-size: 1.2rem;
+  border-radius : 12px;
+  /* background-color: rgba(0, 0, 0, 0.582); */
+  background-color: rgb(45, 43, 43);
+  outline:1px solid transparent;
+  overflow:hidden;
+  backface-visibility:hidden;
+  transform-style:preserve-3d;
+  transform:rotatey(-180deg);
+  -webkit-transform-style:preserve-3d;
+  -webkit-backface-visibility:hidden;
+  -webkit-transform:rotatey(-180deg)
+} 
+.wrapper-project > div{
+  width:100%;
+  height:370px;
+  position:absolute;
+  left:0;
+  top:0;
+  box-shadow:0 8px 5px hsla(0,0%,0%,.2);
+  transition:.8s
+}
+
+.wrapper-project:hover .details{
+  transform:rotatey(0);
+  -webkit-transform:rotatey(0)
+}
+.wrapper-project:hover .project{
+  -webkit-transform:rotatey(180deg);
+  transform:rotatey(180deg)
+}
+.logo-language{
+  height : 30px;
+  margin-right : 7px;
+  width : auto;
+}
+
+@media screen and (min-width : 500px){
+  body h1{
+    font-size : 3rem;
+  }
+  .wrapper-project{
+    width : 100% 
+  }
+  .wrapper-project > div {
+    padding: 23px;;
+}
+}
+
+/**button*/
+.button-link{
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  width : 100px; 
+  height : 50px;
+  border: none;
+  font-weight :700;
+}
+.git{
+  background-image: url("../images/github.png");
+}
+
+
+/***CV***/
+.cv{
+  padding: 20px 0px;
+}
+.wrapper-infos{
+  border-radius: 25px;
+  /* background-image : url("../images/froisse.jpg") ; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.box-opacity{
+  width: 100%;
+  padding : 10px;
+  border-radius: 25px;
+
+}
+.infos > div{
+  padding : 14px;
+  border-radius : 20px;
+  display : flex;
+  font-size : 1.3rem;
+  font-weight : 600;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+.info:hover{
+  transform: scale(1.1);
+}
+.wrapper-skills{
+  padding : 20px;
+  border-radius: 25px;
+  /* background-image : url("../images/froisse.jpg"); */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30Px;;
+}
+.infos .typewriter{
+  font-size : 1.1rem;
+  font-weight : 700;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+.infos{
+  padding : 20px;
+}
+.wrapper-logo{
+  display : flex;
+  width : 40px;
+  align-items: center;
+  font-size : 1.2rem;
+  font-weight : 600;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+/***skills***/
+.progressbar-wrapper {
+  background-color: #7d7f809f;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  height : 15px;
+  
+}
+.progressbar {
+  color: white;
+  
+  text-align: right;
+  border-radius: 10px;
+  opacity : 0.7;
+  height : 15px;
+}
+@media all and (min-width : 575px){
+  .wrapper-logo{
+    width : 140px;
+  }
+  .wrapper-skills{
+    background-color: rgba(255, 255, 255, 0.233);
+  }
+  .box-opacity{
+    background-color: rgb(211, 201, 201, .53);
+  }
+}
+
+
+
+
+@media screen and (min-width : 650px){
+  .name{
+    font-size : 4rem;
+  }
+  .typewriter{
+    font-size : 2rem; 
+  }
+}
+@media screen and (min-width : 2450px){
+  html{
+    font-size: 18px;
+  }
+  .wrapper-logo{
+    font-size : 1rem;
+  }
+}
+/***Animations**/
+
+.typing-30{animation : typing-30 4s ease-out}
+.typing-40{animation : typing-40 4s ease-out}
+.typing-50{animation : typing-50 4s ease-out}
+.typing-60{animation : typing-60 4s ease-out}
+.typing-70{animation : typing-70 4s ease-out}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes typing-30 {
+  from { width: 0 }
+  to { width: 30% }
+}
+@keyframes typing-40 {
+  from { width: 0 }
+  to { width: 40% }
+}
+@keyframes typing-50 {
+  from { width: 0 }
+  to { width: 50% }
+}
+@keyframes typing-60 {
+  from { width: 0 }
+  to { width: 60% }
+}
+@keyframes typing-70 {
+  from { width: 0 }
+  to { width: 70% }
+}
+@keyframes appear{
+  0% {opacity: 0}
+  100% {opacity: 0}
+}
+@keyframes appear-transition{
+  0% {opacity: 0}
+  50% {opacity : 0}
+  100% {opacity: 1}
+}
+@keyframes appear-project{
+  0% {opacity: 0}
+  50% {opacity : 0}
+  100% {opacity: 1}
+} 
+
+
+
