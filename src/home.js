@@ -1,14 +1,15 @@
 import FullPage from './components/fullPage';
-import background from "./images/sky.jpg";
+import background from "./images/dev.webp";
 import Nav from './components/nav';
 import { saveAs } from "file-saver";
+import SectionLink from './components/section-link';
 
 
 function Home() {
     //Function downloading file
     const saveFile = () => {
         saveAs(
-          "https://jolanaubry.com/CV_JolanAubry.pdf", "cv_JolanAubry.pdf"
+          "https://jolanaubry.com/CVJolan.pdf", "cv_JolanAubry.pdf"
         );
       };
     return (
@@ -22,14 +23,15 @@ function Home() {
                     </div>
                     <h1 className="my-3 name">Jolan Aubry</h1>
                     <div className="typewriter">
-                        <div>
-                        Etudiant developpeur web
-                        </div>
+                        <h2>
+                        Développeur web
+                        </h2>
                     </div>
                     <div className="d-flex justify-content-center">
-                    <div className="typewriter-city">Bordeaux</div>
+                    <h2 className="typewriter-city">Bordeaux</h2>
                     </div>
                     <button className="btn btn-light mt-3" onClick={saveFile}>Mon CV</button>
+                    <SectionLink ></SectionLink>
                 </div>
             </FullPage>
         </>

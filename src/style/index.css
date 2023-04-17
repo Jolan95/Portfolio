@@ -17,9 +17,9 @@ h1{
   font-size : 2rem;
   font-family: 'EB Garamond', serif;
 }
-h2{
-  font-family: 'EB Garamond', serif;
-}
+/* h2{
+   font-family: 'EB Garamond', serif; 
+} */
 .img100{
   height : 100%;
   max-width : 30px;
@@ -52,6 +52,7 @@ button:hover{
 }
 .nav-link:hover{
   transform: scale(1.03);
+  color : white
 }
 /***Fullpage***/
 .full-page {
@@ -79,15 +80,18 @@ button:hover{
   height : 200px;
   width : 200px;
   border-radius : 180px;
-  background-image :linear-gradient(rgba(139, 207, 231, 0.164), rgba(86, 219, 236, 0.233)), url('../images/portrait.jpg');
+  background-image :linear-gradient(rgba(139, 207, 231, 0.164), rgba(86, 219, 236, 0.233)), url('../images/portrait.webp');
   background-size: cover;
-  background-position: 7px -35px;
+  background-position: 0px
 }  
 .name{
   font-size: 2.5rem;
 }  
 .btn-light{
   animation : appear-transition 6s 
+}  
+.section-button-link{
+  animation : appear-transition 7s 
 }  
 
 /*Animation-Home*/
@@ -109,8 +113,25 @@ button:hover{
   font-size : 1.6rem; 
   font-weight: 300;
 }
+.btn-link {
+  height : 50px;
+  width: 50px;
+  border-radius : 90px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border:  none
+}
+.btn-link-github{
+  background-image: url("../images/github.webp");
+  background-size : contain;
+  background-color: black;
+}
 
-
+.btn-link-linkedin{
+  background-size : 50%;
+  background-color: rgb(12, 101, 194);
+  background-image: url("../images/linkedin.webp");
+}
 
 
 /***Work***/
@@ -128,8 +149,8 @@ button:hover{
   -webkit-perspective:600px;
   perspective:600px;
   height:360px;
-  width:75%;
-  max-width:350px;
+  width:100%;
+  max-width:400px;
 }  
 .wrapper-project:nth-child(1){
   animation: appear-project 1.2s;
@@ -139,6 +160,15 @@ button:hover{
 }
 .wrapper-project:nth-child(3){
   animation: appear-project 3.6s;
+}
+.wrapper-project:nth-child(4){
+  animation: appear-project 4.8s;
+}
+.wrapper-project:nth-child(5){
+  animation: appear-project 6s;
+}
+.wrapper-project:nth-child(6){
+  animation: appear-project 7.2s;
 }
 .project h2{ 
   font-size : 1.8rem;
@@ -180,7 +210,7 @@ button:hover{
   transition:.8s
 }
 .web{
-  background-image: url("../images/website.jpg");
+  background-image: url("../images/website.webp");
   background-size: contain!important;
   background-position: center;
   background-color: white;
@@ -208,14 +238,14 @@ button:hover{
     width : 100% 
   }
   .wrapper-project > div {
-    padding: 23px;;
+    padding: 10px;;
 }
 }
 
 /**button*/
 .button-link{
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   border-radius: 12px;
   width : 100px; 
   height : 50px;
@@ -223,7 +253,7 @@ button:hover{
   font-weight :700;
 }
 .git{
-  background-image: url("../images/github.png");
+  background-image: url("../images/github.webp");
 }
 
 
@@ -333,6 +363,7 @@ button:hover{
 .typing-50{animation : typing-50 4s ease-out}
 .typing-60{animation : typing-60 4s ease-out}
 .typing-70{animation : typing-70 4s ease-out}
+.typing-80{animation : typing-80 4s ease-out}
 
 @keyframes typing {
   from { width: 0 }
@@ -357,6 +388,10 @@ button:hover{
 @keyframes typing-70 {
   from { width: 0 }
   to { width: 70% }
+}
+@keyframes typing-80 {
+  from { width: 0 }
+  to { width: 80% }
 }
 @keyframes appear{
   0% {opacity: 0}

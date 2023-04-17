@@ -11,7 +11,7 @@ function Projet (props){
 
 	return (
 
-   		<div className="d-flex justify-content-around wrapper-project mb-5 mb-xl-0">
+   		<div className="wrapper-project mt-5 mb-4">
     	  	<div  style={{backgroundImage : `url(${props.background})`}} className="project">
     	  	</div>
     	  	<div className="details d-flex flex-column justify-content-between">
